@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.hero-section {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/IMG_1006.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /* Changed from fixed height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    /* Add padding for better spacing */
+}
+
+.hubungi-section {
+    background-image: url("../images/hubungi-01.png") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4.375rem);
+    /* Responsive font size */
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.italic-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #ffc107;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: #9a7726;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.indent {
+    text-indent: 7%;
+}
+
+.indent p {
+    font-weight: 400;
+}
+
+.section-0 {
+    min-height: 70vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.section-0 h1 {
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: #9a7726;
+    margin-bottom: 2rem;
+}
+
+.section-0 p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: justify;
+    color: #9a7726;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image-container {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.tentang-kami-img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tentang-kami-img:hover {
+    transform: scale(1.02);
+}
+
+.about-content {
+    flex: 0 0 60%;
+}
+
+.about-text {
+    padding: 1rem;
+}
+
+.about-text p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #9a7726;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.indent {
+    text-indent: 2rem;
+}
+
+.section-1 {
+    min-height: 70vh;
+    width: 100%;
+    background-color: #f5f1e7;
+    padding: 4rem 2rem;
+}
+
+.section-1 h1 {
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: #9a7726;
+}
+
+.section-1 h3 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 500;
+    color: #9a7726;
+    margin-bottom: 1rem;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.tentang-kami-img {
+    width: auto;
+    height: 70vh;
+    max-width: 100%;
+}
+
+.package-carousel {
+    position: relative;
+    padding: 0 60px;
+    /* Memberikan ruang untuk tombol navigasi */
+}
+
+.package-card {
+    height: 100%;
+    border: none;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 66.67%; /* Aspect ratio 3:2 */
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(154, 119, 38, 0.15);
+}
+
+.package-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #9a7726;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    height: 2.8em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    height: 4.8em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.btn-primary.pesan-sekarang {
+    width: 100%;
+    background-color: #9a7726;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary.pesan-sekarang:hover {
+    background-color: #825f1f;
+    transform: translateY(-2px);
+}
+
+.btn-primary.pesan-sekarang i {
+    transition: transform 0.3s ease;
+}
+
+.btn-primary.pesan-sekarang:hover i {
+    transform: translateX(5px);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #9a7726;
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: -20px;
+}
+
+.carousel-control-next {
+    right: -20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #825f1f;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.testimoni-iframe {
+    width: auto;
+    height: 50vh;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* Menjaga aspek rasio */
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    color: #825f1f;
+    transform: scale(1.1);
+}
+
+/* Media Queries for better responsiveness */
+@media screen and (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-image-container,
+    .about-content {
+        flex: 0 0 100%;
+    }
+
+    .tentang-kami-img {
+        max-height: 50vh;
+        width: 100%;
+    }
+
+    .about-text {
+        padding: 0;
+    }
+
+    .menu-container {
+        padding: 0 2rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-0 .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-0 .col-5,
+    .section-0 .col-7 {
+        width: 100%;
+    }
+
+    .section-1 .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-1 .col-5,
+    .section-1 .col-7 {
+        width: 100%;
+    }
+
+    .carousel-item {
+        margin-right: 0;
+    }
+
+    .package-card {
+        flex: 0 0 calc(33.33% - 1rem);
+    }
+
+    .package-carousel {
+        padding: 0 45px;
+        /* Mengurangi padding pada mobile */
+    }
+
+    .carousel-control-prev {
+        left: -35px;
+    }
+
+    .carousel-control-next {
+        right: -35px;
+    }
+
+    .hubungi-kami-section {
+        text-align: center;
+    }
+
+    .hubungi-item h3 {
+        justify-content: center;
+    }
+
+    .section-0 {
+        padding: 3rem 1rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .indent {
+        text-indent: 1.5rem;
+    }
+
+    .section-1 {
+        padding: 3rem 1rem;
+    }
+
+    .menu-container {
+        padding: 0 1rem;
+    }
+
+    .package-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+}
+
+/* Add better spacing for very small screens */
+@media screen and (max-height: 480px) {
+    .section-0 {
+        padding: 2rem 1rem;
+    }
+
+    .section-1 {
+        padding: 2rem 1rem;
+    }
+
+    .tentang-kami-img {
+        max-height: 40vh;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        height: auto;
+        -webkit-line-clamp: 1;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary.pesan-sekarang {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

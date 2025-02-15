@@ -1,0 +1,64 @@
+.chart-container {
+    position: relative;
+    height: 350px; /* Tinggi container diperkecil */
+}
+
+#revenueChart {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    height: 250px; /* Set fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-icon {
+    width: 48px; /* Set fixed width */
+    height: 48px; /* Set fixed height */
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Untuk menangani text warning yang muncul pada Total Pesanan */
+.stat-card small {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Memastikan tinggi konten konsisten */
+.stat-card div:last-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card h6 {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+}

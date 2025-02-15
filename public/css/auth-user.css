@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/IMG_0684.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px; /* Increased card width */
+}
+
+/* Card for Login */
+.card-login {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.card-login h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card-registration {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.card-registration h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Form Input Fields */
+.form-outline input {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-outline input:focus {
+    border-color: #926c15;
+    box-shadow: 0 0 10px rgba(146, 108, 21, 0.5);
+}
+
+.form-outline input::placeholder {
+    color: #aaa;
+}
+
+/* Invalid Feedback */
+.invalid-feedback {
+    color: #e74c3c;
+    font-size: 0.875rem;
+}
+
+/* Submit Button */
+.btn {
+    background-color: #926c15;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #76520e;
+}
+
+/* Register Link */
+.mt-3 a {
+    color: #926c15;
+    font-weight: bold;
+}
+
+.mt-3 a:hover {
+    color: #76520e;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+    .card-login h3 {
+        font-size: 1.5rem;
+    }
+}

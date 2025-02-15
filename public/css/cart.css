@@ -1,0 +1,45 @@
+/* Modal Header */
+.modal-header {
+    background-color: #9a7726 !important;
+}
+
+/* Progress Bar */
+.progress-bar.bg-primary {
+    background-color: #9a7726 !important;
+}
+
+/* Input Group Addons */
+.input-group-text.bg-primary {
+    background-color: #9a7726 !important;
+    border-color: #9a7726;
+}
+
+/* Primary Buttons */
+.modal .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    border-radius: 10px;
+}
+
+.modal .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+}
+
+/* Text Colors */
+.modal .text-primary {
+    color: #9a7726 !important;
+}
+
+.modal .btn-secondary {
+    background-color: #f9f9f9;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: #9a7726;
+}
+
+.modal .btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #825f1f;
+    color: #825f1f;
+}

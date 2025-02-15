@@ -1,0 +1,339 @@
+main {
+    margin-top: 120px;
+}
+
+.container {
+    min-height: 80vh;
+}
+
+.content {
+    background-color: #fafbfe;
+    width: 100%;
+    height: 100vh;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: #9a7726;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Menjaga jarak antar item */
+}
+
+.package-card {
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+.package-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card .card-body {
+    padding: 1.25rem;
+}
+
+.package-card .card-title {
+    color: #9a7726;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.package-card .card-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.package-card .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.package-card .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+}
+
+.package-card .btn {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: white;
+}
+
+.package-card .btn:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+    color: white;
+}
+
+.package-card .btn-secondary {
+    background-color: #f9f9f9;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: #9a7726;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #9a7726;
+    font-weight: 700;
+}
+
+.modal-header {
+    border: none;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white !important;
+}
+
+.modal-card {
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 18px;
+    z-index: 1055 !important; /* Ensure it is above other elements */
+    position: relative; /* Untuk memastikan z-index diterapin */
+    pointer-events: auto; /* Ensure modal contents are clickable */
+}
+
+.modal-body .img-fluid {
+    border-radius: 10px;
+}
+
+.modal-body .card-title {
+    color: #9a7726;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-body .card-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.modal-body .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+    color: white;
+}
+
+.modal-body .btn-secondary {
+    background-color: #f9f9f9;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: #9a7726;
+}
+
+.modal-body .btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #825f1f;
+    color: #825f1f;
+}
+
+.modal-card {
+    z-index: 1050 !important;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(154, 119, 38, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(154, 119, 38, 0.15);
+} */
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(154, 119, 38, 0.1);
+}
+
+/* Profile Image */
+.profile-image-container {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #9a7726;
+    box-shadow: 0 4px 12px rgba(154, 119, 38, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Profile Info */
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-size: 2rem;
+    color: #9a7726;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.profile-email {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.profile-actions .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.profile-actions .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-name {
+        font-size: 1.75rem;
+    }
+
+    .profile-actions {
+        justify-content: center;
+    }
+
+    .edit-profile-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 1.5rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-email {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,295 @@
+.photo-container {
+    width: 100px;
+    /* Atur sesuai ukuran yang diinginkan */
+    height: 100px;
+    /* Ukuran yang sama untuk memastikan 1:1 */
+    overflow: hidden;
+    /* Menyembunyikan bagian yang terpotong */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleTable {
+    background-color: #926c15;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: start;
+}
+
+.container h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #9a7726;
+    margin-bottom: 2rem;
+}
+
+.img-thumbnail {
+    width: 40%;
+}
+
+/* DataTable Container Styling */
+.table-responsive {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem 0;
+}
+
+/* DataTable Header & Search */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 1.5rem;
+    float: right;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    outline: none;
+    border-color: #926c15;
+    box-shadow: 0 0 0 3px rgba(146, 108, 21, 0.1);
+}
+
+/* Table Styling */
+#paketTable {
+    width: 100% !important;
+    margin: 0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#paketTable thead th {
+    background-color: #926c15;
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+#paketTable tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Row Hover & Alternating Colors */
+#paketTable tbody tr:hover {
+    background-color: rgba(146, 108, 21, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+#paketTable tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Image Cell Styling */
+#paketTable td.has-img {
+    text-align: center;
+}
+
+#paketTable td.has-img img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#paketTable td.has-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+#paketTable .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin: 0.25rem;
+}
+
+#paketTable .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+#paketTable .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+#paketTable .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination Styling */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: white;
+    color: #333 !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #926c15 !important;
+    color: white !important;
+    border-color: #926c15;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #926c15 !important;
+    color: white !important;
+    border-color: #926c15;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dataTables_wrapper .dataTables_filter {
+        float: none;
+        text-align: left;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #paketTable td {
+        padding: 0.75rem;
+    }
+
+    #paketTable .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    #produkTable td {
+        padding: 0.75rem;
+    }
+
+    #produkTable .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Info Text Styling */
+.dataTables_info {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Loading State */
+.dataTables_processing {
+    background: rgba(255, 255, 255, 0.9);
+    color: #926c15;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+#produkTable {
+    width: 100% !important;
+    margin: 0 !important;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#produkTable thead th {
+    background-color: #926c15;
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+#produkTable tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Row Hover & Alternating Colors */
+#produkTable tbody tr:hover {
+    background-color: rgba(146, 108, 21, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+#produkTable tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Image Cell Styling */
+#produkTable td.has-img {
+    text-align: center;
+}
+
+#produkTable td.has-img img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#produkTable td.has-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+#produkTable .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin: 0.25rem;
+}
+
+#produkTable .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+#produkTable .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+#produkTable .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

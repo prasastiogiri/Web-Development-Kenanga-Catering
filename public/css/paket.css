@@ -1,0 +1,198 @@
+main {
+    margin-top: 120px;
+}
+
+.content {
+    background-color: #fafbfe;
+    width: 100%;
+    height: 100vh;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: clamp(2rem, 4vw, 3.125rem);
+    font-weight: 700;
+    color: #9a7726;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Menjaga jarak antar item */
+}
+
+.package-card {
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+.package-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card .card-body {
+    padding: 1.25rem;
+}
+
+.package-card .card-title {
+    color: #9a7726;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.package-card .card-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.package-card .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.package-card .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+}
+
+.package-card .btn {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: white;
+}
+
+.package-card .btn:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+    color: white;
+}
+
+.package-card .btn-secondary {
+    background-color: #f9f9f9;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: #9a7726;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #9a7726;
+    font-weight: 700;
+}
+
+.modal-card {
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 18px;
+    z-index: 1055 !important; /* Ensure it is above other elements */
+    position: relative; /* Untuk memastikan z-index diterapin */
+    pointer-events: auto; /* Ensure modal contents are clickable */
+}
+
+.modal-body .img-fluid {
+    border-radius: 10px;
+}
+
+.modal-body .card-title {
+    color: #9a7726;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-body .card-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.modal-body .btn-primary {
+    background-color: #9a7726;
+    border-color: #9a7726;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #825f1f;
+    border-color: #825f1f;
+    color: white;
+}
+
+.modal-body .btn-secondary {
+    background-color: #f9f9f9;
+    border-color: #9a7726;
+    border-radius: 10px;
+    color: #9a7726;
+}
+
+.modal-body .btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #825f1f;
+    color: #825f1f;
+}
+
+.modal-card {
+    z-index: 1050 !important;
+}
+
+#decrement,
+#increment {
+    width: 40px;
+    height: 38px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
